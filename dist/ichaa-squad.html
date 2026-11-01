@@ -104,7 +104,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0}
 <div id="lock">
   <div id="lsc"><div class="moon"></div><div class="city"></div></div>
   <div class="sb"><span>●●●○ 4G</span><span>38% 🔋</span></div>
-  <div class="d">Malam sebelum TKA</div><div class="t">21:47</div>
+  <div class="d">Malam sebelum TKA</div><div class="t">23:30</div>
   <div id="nots"></div>
   <div id="hint">ketuk atau geser ke atas ↑</div>
 </div>
@@ -176,7 +176,7 @@ async function letter(){
 let opened=0;
 async function openChat(){
  if(opened)return;opened=1;$('lock').classList.add('off');$('app').classList.add('on');await w(1400);
- sys('Malam ini · 21:47');await w(600);sys('Ichaa bergabung ke grup 🌙');await w(1000);
+ sys('Malam ini · 23:30');await w(600);sys('Ichaa bergabung ke grup 🌙');await w(1000);
  await msg('eren','ICHAAAA 🔥🔥 besok TKA kan?! Ayo semangaaat!!');
  await msg('mikasa','Eren. Volume.',0,['levi','😒']);
  await msg('eren','Aku ngetik, bukan teriak.');
@@ -211,7 +211,7 @@ async function openChat(){
  await msg('levi','Diam semua. Beri ruang. Dia lagi ngetik.');
  await msg('lena','Ichaa, kami mundur sebentar ya. Ada yang ingin bicara denganmu. 🌙');
  $('app').classList.add('dim');await w(800);sys('Aa uxie bergabung ke grup 💌');$('st').textContent='8 anggota · online';await w(1400);
- const r=document.createElement('div');r.className='row typing';r.style.setProperty('--c','#ffcf7a');r.innerHTML='<div class="av" style="display:grid;place-items:center;background:#223356">💌</div><div class="col"><span class="nm">Kakak</span><div class="b dots"><i></i><i></i><i></i></div></div>';ch.appendChild(r);down(1);$('st').textContent='Aa uxie sedang mengetik…';await w(5200);r.remove();
+ const r=document.createElement('div');r.className='row typing';r.style.setProperty('--c','#ffcf7a');r.innerHTML='<div class="av" style="display:grid;place-items:center;background:#223356">💌</div><div class="col"><span class="nm">Aa Uxie/span><div class="b dots"><i></i><i></i><i></i></div></div>';ch.appendChild(r);down(1);$('st').textContent='Aa uxie sedang mengetik…';await w(5200);r.remove();
  await letter();await w(900);
  bar.innerHTML='<button class="send" id="sd">Aku sudah baca ♡</button>';await new Promise(x=>$('sd').onclick=x);
  bar.innerHTML='<span class="ph">…</span>';$('app').classList.remove('dim');me('♡');

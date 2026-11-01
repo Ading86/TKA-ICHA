@@ -147,27 +147,23 @@ async function ask(q,opts){
 }
 const LET=`Hey, Ichaa.
 
-Kalau kamu sudah sampai sejauh ini, berarti besok adalah hari yang cukup penting buat kamu, ya?
+Besok udah mulai TKA yaaw? mangatss yaa!! Hari pertama pasti agak gugup bukan?
 
-Aku nggak tahu persis apa yang kamu rasakan sekarang. Mungkin gugup, mungkin takut, atau mungkin kamu cuma ingin semuanya cepat selesai.
+Kamu nggak harus menjadi sempurna besok, yg penting besok kamu try ur best.
 
-Tapi ada satu hal yang ingin aku bilang.
+Kalau ada soal yang sulit, tarik napas. Kalau ada hal yang nggak sesuai harapan, jangan langsung nyalahin diri sendiri.
 
-Kamu nggak harus menjadi sempurna besok. Kamu cuma perlu memberikan kesempatan kepada dirimu sendiri untuk mencoba.
+Dan kalau nanti semuanya sudah selesai, apa pun hasilnya, aku harap kamu tetap bisa tersenyum dan bangga sama apa yg udah kamu lakuin sejauh ini.
 
-Kalau ada soal yang sulit, tarik napas. Kalau ada hal yang nggak sesuai harapan, jangan langsung menyalahkan diri sendiri.
+Aku cuman bisa bantu doa aja.
 
-Dan kalau nanti semuanya sudah selesai, apa pun hasilnya, aku harap kamu tetap bisa tersenyum dan bangga karena kamu sudah berusaha.
-
-Aku memang nggak bisa duduk di sebelahmu besok.
-
-Tapi aku bisa berharap yang terbaik buat kamu dari sini.
+Berharap yang terbaik buat ichaa.
 
 So, do your best, okay?
 
 Your tomorrow doesn't have to be perfect to be beautiful. ♡
 
-— from your online big brother`;
+— from your online brother, Uxie.`;
 
 async function letter(){
  ch.insertAdjacentHTML('beforeend','<div class="note"><div class="pin">📌 PESAN DARI UXIE</div></div>');const n=ch.lastChild;
@@ -215,7 +211,7 @@ await ask('Ada yang mau kamu bilang ke kami?',[
  await msg('levi','Diam semua. Beri ruang. Dia lagi ngetik.');
  await msg('lena','Ichaa, kami mundur sebentar ya. Ada yang ingin bicara denganmu. 🌙');
  $('app').classList.add('dim');await w(800);sys('Aa uxie bergabung ke grup 💌');$('st').textContent='8 anggota · online';await w(1400);
- const r=document.createElement('div');r.className='row typing';r.style.setProperty('--c','#ffcf7a');r.innerHTML='<div class="av" style="display:grid;place-items:center;background:#223356">💌</div><div class="col"><span class="nm">Kakak</span><div class="b dots"><i></i><i></i><i></i></div></div>';ch.appendChild(r);down(1);$('st').textContent='Kakak sedang mengetik…';await w(5200);r.remove();
+ const r=document.createElement('div');r.className='row typing';r.style.setProperty('--c','#ffcf7a');r.innerHTML='<div class="av" style="display:grid;place-items:center;background:#223356">💌</div><div class="col"><span class="nm">Aa Uxie</span><div class="b dots"><i></i><i></i><i></i></div></div>';ch.appendChild(r);down(1);$('st').textContent='Aa uxie sedang mengetik…';await w(5200);r.remove();
  await letter();await w(900);
  bar.innerHTML='<button class="send" id="sd">Aku sudah baca ♡</button>';await new Promise(x=>$('sd').onclick=x);
  bar.innerHTML='<span class="ph">…</span>';$('app').classList.remove('dim');me('♡');
