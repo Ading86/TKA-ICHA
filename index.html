@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>NONCHALANT GROUP ^_^</title>
+<title>SPECIAL FOR ICHA</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0b1220;--hd:#101b33;--bub:#1a2a4a;--gold:#ffcf7a;--tx:#eef3ff;--mut:#8ea0c4;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -110,7 +110,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0}
   <div id="hint">ketuk atau geser ke atas ↑</div>
 </div>
 <div id="app">
-  <div id="hd"><div class="stk" id="stk"></div><div><b id="gn">Squad Semangat Ichaa</b><small id="st">7 anggota · online</small></div></div>
+  <div id="hd"><div class="stk" id="stk"></div><div><b id="gn">NONCHALANT GROUP ^_^</b><small id="st">7 anggota · online</small></div></div>
   <div id="chat"></div>
   <div id="bar"><span class="ph">…</span></div>
 </div>
@@ -229,7 +229,7 @@ await ask('Ada yang mau kamu bilang ke kami?',[
 (function(){const l=$('lsc');for(let i=0;i<50;i++){const s=document.createElement('i');s.className='stl';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*58}%;animation-delay:${Math.random()*3}s;opacity:${.3+Math.random()*.7}`;l.appendChild(s)}
  [[22,70,8],[34,95,10],[44,120,7]].forEach(([t,d,h],i)=>{const c=document.createElement('i');c.className='lc';c.style.cssText=`top:${t}%;width:${34+i*8}vw;height:${h}vh;animation-duration:${d}s;animation-delay:-${i*30}s`;l.appendChild(c)});
  const N=[['eren','Eren','ICHAA!! Hari ini TKA kan?! 🔥'],['levi','Levi','Pastikan kartu peserta dan perlengkapanmu sudah siap.'],['mikasa','Mikasa','Jangan lupa sarapan dan minum air, Ichaa.'],['lena','Lena','Selamat pagi! Kami ada di sini untukmu ☀️']];
- N.forEach((n,i)=>setTimeout(()=>{if(opened)return;const b=document.createElement('button');b.className='noti';b.onclick=openChat;b.innerHTML=`<div class="ni" style="background-image:url(${IMG[n[0]]});background-position:${K[n[0]].p}"></div><div style="flex:1"><small>SQUAD SEMANGAT ICHAA</small><b>${n[1]}<i>sekarang</i></b><span>${n[2]}</span></div>`;$('nots').appendChild(b);navigator.vibrate&&navigator.vibrate(50)},1500+i*1600));
+ N.forEach((n,i)=>setTimeout(()=>{if(opened)return;const b=document.createElement('button');b.className='noti';b.onclick=openChat;b.innerHTML=`<div class="ni" style="background-image:url(${IMG[n[0]]});background-position:${K[n[0]].p}"></div><div style="flex:1"><small>NONCHALANT GROUP ^_^</small><b>${n[1]}<i>sekarang</i></b><span>${n[2]}</span></div>`;$('nots').appendChild(b);navigator.vibrate&&navigator.vibrate(50)},1500+i*1600));
  $('lock').addEventListener('click',openChat);let y0=0;$('lock').addEventListener('pointerdown',e=>y0=e.clientY);$('lock').addEventListener('pointerup',e=>{if(y0-e.clientY>50)openChat()})})();
 /* ===== final: langit "kataware-doki" -> pagi cerah (ala Kimi no Na wa). Semua digambar lewat kode (canvas), tanpa gambar luar ===== */
 const Sky=(function(){
