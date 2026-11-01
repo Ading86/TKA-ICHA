@@ -12,26 +12,26 @@ html,body{height:100%;background:#05080f;color:var(--tx);font-family:Nunito,syst
 button{font:inherit;color:inherit;cursor:pointer;border:0}
 #lock,#app,#end{position:fixed;inset:0;margin:auto;max-width:520px}
 /* lock screen */
-#lock{z-index:10;display:flex;flex-direction:column;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 1.2vh) 1.1rem 0;overflow:hidden;background:linear-gradient(180deg,#050b24 0%,#0e1f4a 42%,#2a4a7c 70%,#e8825a 118%);transition:opacity 1s,transform 1s;touch-action:pan-y}
+#lock{z-index:10;display:flex;flex-direction:column;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 1.2vh) 1.1rem 0;overflow:hidden;background:linear-gradient(180deg,#8dc9ef 0%,#b8e0f2 35%,#ffe3b0 68%,#f5a66d 100%);transition:opacity 1s,transform 1s;touch-action:pan-y}
 #lock.off{opacity:0;transform:scale(1.08);pointer-events:none}
 #lock>*{position:relative;z-index:2}#lock>#lsc{position:absolute}
 #lsc{inset:0;z-index:1;pointer-events:none;overflow:hidden}
-.sb{width:100%;display:flex;justify-content:space-between;font-size:.74rem;font-weight:700;padding:.5rem .3rem;color:#e6efff}
-#lock .d{margin-top:2.2vh;font-size:.95rem;color:#dbe6ff;letter-spacing:.04em;font-weight:600}
-#lock .t{font:300 clamp(4.6rem,23vw,6.4rem)/1 Nunito;margin:.1rem 0 1.2rem;text-shadow:0 0 30px #8fb4ff55}
-.moon{position:absolute;right:13%;top:14%;width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#ffeccd 60%,#f6d9a8);box-shadow:0 0 40px 14px #ffe6b455,0 0 120px 50px #ffd9a022}
+.sb{width:100%;display:flex;justify-content:space-between;font-size:.74rem;font-weight:700;padding:.5rem .3rem;color:#fffaf0}
+#lock .d{margin-top:2.2vh;font-size:.95rem;color:#fffaf0;letter-spacing:.04em;font-weight:800;text-shadow:0 1px 8px #8b5a3a55}
+#lock .t{font:800 clamp(4.6rem,23vw,6.4rem)/1 Nunito;margin:.1rem 0 1.2rem;color:#fffaf0;text-shadow:0 2px 24px #9b5d3b55}
+.moon{position:absolute;right:13%;top:14%;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff8d8,#ffd36b 65%,#ffae45);box-shadow:0 0 40px 14px #ffe6b455,0 0 120px 50px #ffd9a044}
 .stl{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;animation:tw 3s ease-in-out infinite}
 @keyframes tw{50%{opacity:.15;transform:scale(.6)}}
 .lc{position:absolute;border-radius:50px;background:#ffb88a40;filter:blur(14px);animation:dr linear infinite}
 @keyframes dr{from{transform:translateX(-45vw)}to{transform:translateX(150vw)}}
-.city{position:absolute;left:0;right:0;bottom:0;height:17vh;background:linear-gradient(#0a1128,#04070f);clip-path:polygon(0 45%,7% 45%,7% 20%,16% 20%,16% 52%,27% 52%,27% 30%,38% 30%,38% 58%,50% 58%,50% 12%,60% 12%,60% 48%,72% 48%,72% 26%,84% 26%,84% 54%,93% 54%,93% 36%,100% 36%,100% 100%,0 100%)}
+.city{position:absolute;left:0;right:0;bottom:0;height:17vh;background:linear-gradient(#b57c5b,#8d6b59);clip-path:polygon(0 45%,7% 45%,7% 20%,16% 20%,16% 52%,27% 52%,27% 30%,38% 30%,38% 58%,50% 58%,50% 12%,60% 12%,60% 48%,72% 48%,72% 26%,84% 26%,84% 54%,93% 54%,93% 36%,100% 36%,100% 100%,0 100%)}
 #nots{width:100%;display:flex;flex-direction:column;gap:.5rem}
 .noti{display:flex;gap:.7rem;align-items:center;text-align:left;width:100%;background:#ffffff24;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid #ffffff22;border-radius:18px;padding:.7rem .8rem;animation:ni .6s cubic-bezier(.2,1.2,.4,1) both;box-shadow:0 8px 26px #0005}
 @keyframes ni{from{opacity:0;transform:translateY(-24px) scale(.95)}}
 .ni{width:42px;height:42px;border-radius:12px;flex:none;background-size:190%;background-color:#2a3a60;border:1.5px solid #ffffff55}
 .noti b{display:flex;justify-content:space-between;font-size:.82rem}.noti b i{font-style:normal;font-weight:400;font-size:.7rem;color:#cfdcf5}
 .noti span{font-size:.88rem;color:#f1f5ff;display:block}.noti small{display:block;font-size:.62rem;letter-spacing:.14em;color:#ffd9a0;margin-bottom:1px;font-weight:800}
-#hint{margin-top:auto;margin-bottom:calc(env(safe-area-inset-bottom,0px) + 3.5vh);font-size:.72rem;letter-spacing:.25em;color:#e6efffcc;animation:bl 2.6s infinite;text-transform:uppercase}
+#hint{margin-top:auto;margin-bottom:calc(env(safe-area-inset-bottom,0px) + 3.5vh);font-size:.72rem;letter-spacing:.25em;color:#fffaf0;animation:bl 2.6s infinite;text-transform:uppercase}
 @keyframes bl{50%{opacity:.35}}
 /* chat */
 #app{z-index:5;display:flex;flex-direction:column;background:var(--bg);background-image:radial-gradient(#ffffff14 1px,transparent 1.5px),radial-gradient(#ffffff0c 1px,transparent 1.5px);background-size:46px 46px,29px 29px;background-position:0 0,13px 17px;opacity:0;transition:opacity .8s}
@@ -64,7 +64,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0}
 @keyframes pu{50%{transform:scale(1.06)}}
 .ht{position:fixed;top:-30px;font-size:1.3rem;pointer-events:none;animation:fall linear forwards;z-index:20}
 @keyframes fall{to{transform:translateY(110vh) rotate(40deg);opacity:.2}}
-#end{z-index:30;opacity:0;pointer-events:none;transition:opacity 2.5s;background:#03061a}
+#end{z-index:30;opacity:0;pointer-events:none;transition:opacity 2.5s;background:#d8efff}
 #end.on{opacity:1;pointer-events:auto}
 #esk{position:absolute;inset:0;width:100%;height:100%}
 #etx{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.6rem}
@@ -104,7 +104,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0}
 <div id="lock">
   <div id="lsc"><div class="moon"></div><div class="city"></div></div>
   <div class="sb"><span>●●●○ 4G</span><span>38% 🔋</span></div>
-  <div class="d">Malam sebelum TKA</div><div class="t">23:30</div>
+  <div class="d">Pagi hari TKA</div><div class="t">06:30</div>
   <div id="nots"></div>
   <div id="hint">ketuk atau geser ke atas ↑</div>
 </div>
@@ -113,7 +113,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0}
   <div id="chat"></div>
   <div id="bar"><span class="ph">…</span></div>
 </div>
-<div id="end"><canvas id="esk"></canvas><div id="etx"><p id="ln"></p><div id="fb"><h1>GOOD LUCK TOMORROW,<br>ICHAA. ♡</h1><p>One test. One day.<br>Not the whole story of your life.</p><p class="sm">Kamu boleh gugup. Kamu boleh salah.<br>Dan kamu tetap mampu melangkah.</p><button onclick="location.reload()">↻ buka obrolannya lagi</button></div></div></div>
+<div id="end"><canvas id="esk"></canvas><div id="etx"><p id="ln"></p><div id="fb"><h1>GOOD LUCK TODAY,<br>ICHAA. ♡</h1><p>One test. One day.<br>Not the whole story of your life.</p><p class="sm">Kamu boleh gugup. Kamu boleh salah.<br>Dan kamu tetap mampu melangkah hari ini.</p><button onclick="location.reload()">↻ buka obrolannya lagi</button></div></div></div>
 
 <script>
 /* ===== KONFIGURASI GAMBAR: taruh gambar baru di assets/characters/ (nama file di bawah), lalu atur crop avatar di K ===== */
@@ -147,9 +147,9 @@ async function ask(q,opts){
 }
 const LET=`Hey, Ichaa.
 
-Besok udah mulai TKA yaaw? mangatss yaa!! Hari pertama pasti agak gugup bukan?
+Hari ini mulai TKA yaaw? Mangatss yaa!! Wajar kalau agak gugup, Ichaa.
 
-Kamu nggak harus menjadi sempurna besok, yg penting besok kamu try ur best.
+Kamu nggak harus menjadi sempurna hari ini, yang penting kamu try your best.
 
 Kalau ada soal yang sulit, tarik napas. Kalau ada hal yang nggak sesuai harapan, jangan langsung nyalahin diri sendiri.
 
@@ -161,7 +161,7 @@ Berharap yang terbaik buat ichaa.
 
 So, do your best, okay?
 
-Your tomorrow doesn't have to be perfect to be beautiful. ♡
+Your day doesn't have to be perfect to be beautiful. ♡
 
 — from your online brother, Uxie.`;
 
@@ -173,34 +173,34 @@ async function letter(){
 let opened=0;
 async function openChat(){
  if(opened)return;opened=1;$('lock').classList.add('off');$('app').classList.add('on');await w(1400);
- sys('Malam ini · 23:30');await w(600);sys('Ichaa bergabung ke grup 🌙');await w(1000);
- await msg('eren','ICHAAAA 🔥🔥 besok TKA kan?! Ayo semangaaat!!');
+ sys('Pagi ini · 06:30');await w(600);sys('Ichaa bergabung ke grup ☀️');await w(1000);
+ await msg('eren','ICHAAAA 🔥🔥 hari ini TKA kan?! Ayo semangaaat!!');
  await msg('mikasa','Eren. Volume.',0,['levi','😒']);
  await msg('eren','Aku ngetik, bukan teriak.');
  await msg('levi','Huruf kapital dan dua tanda seru. Itu teriak.');
  await msg('eren','...');
  await msg('levi','Ichaa, abaikan mereka. Satu hal penting: meja belajarmu sudah rapi? Pikiran jernih mulai dari meja bersih.',1);
- await msg('akame','Target besok: selesai ujian, kita makan daging. Setuju?',0,['eren','🍖']);
+ await msg('akame','Target hari ini: selesai ujian, kita makan daging. Setuju?',0,['eren','🍖']);
  await msg('nouzen','...kamu nggak harus menjawab semuanya sekarang.');
- await msg('lena','Selamat malam, Ichaa. Maaf ya, mereka memang seramai ini. Bagaimana perasaanmu malam ini?');
+ await msg('lena','Selamat pagi, Ichaa. Maaf ya, mereka memang seramai ini. Gimana perasaanmu menjelang TKA?');
  await ask('Gimana perasaanmu sekarang?',[
   {l:'Deg-degan banget 😣',f:'nervous',r:[['mikasa','Tarik napas pelan-pelan. Aku di sini.'],['eren','Aku juga deg-degan kalau mau ujian kok!'],['levi','Eren, kamu cuma deg-degan kalau kehabisan roti.'],['eren','Itu juga serius!!'],['nouzen','Deg-degan itu tanda kamu peduli. Itu bukan kelemahan.',1]]},
-  {l:'Capek, pengen cepat selesai 😴',f:'tired',r:[['lena','Istirahat itu bagian dari persiapan. Tidur cukup lebih penting dari belajar semalaman.'],['akame','Tidur. Itu perintah.'],['levi','Setuju. Dan cuci muka dulu sebelum tidur.'],['eren','Satu soal lagi aja deh—'],['mikasa','Eren.'],['eren','Iya, iya, tidur 🙄']]},
-  {l:'Aku siap! 💪',f:'ready',r:[['eren','NAH GITU DONG!! 🔥'],['levi','Hmph. Bagus. Tapi jangan sombong.'],['akame','Siap itu bagus. Tetap makan dulu.'],['mikasa','Dan tidur cukup, ya.']]}]);
+  {l:'Masih ngantuk dan capek 😵‍💫',f:'tired',r:[['lena','Nggak apa-apa, pelan-pelan dulu. Minum air dan tarik napas.'],['akame','Sarapan sedikit kalau bisa. Biar ada tenaga.'],['levi','Cuci muka, cek barang bawaan, lalu berangkat tepat waktu.'],['eren','KITA LAWAN NGANTUKNYA!! 🔥'],['mikasa','Jangan berisik, Eren.'],['eren','...semangat pelan-pelan 🙄']]},
+  {l:'Aku siap! 💪',f:'ready',r:[['eren','NAH GITU DONG!! 🔥'],['levi','Hmph. Bagus. Tapi jangan sombong.'],['akame','Siap itu bagus. Tetap makan dulu.'],['mikasa','Tetap tenang dan fokus, ya.']]}]);
 
-await msg('mikasa',s=>({nervous:'Kalau masih deg-degan nanti, ingat: pelan-pelan saja ya, Ichaa.',tired:'Tidur lebih awal ya. Aku yang jaga dari sini.',ready:'Semangatmu bagus. Simpan sebagian buat besok pagi.'}[s.feel]));
+await msg('mikasa',s=>({nervous:'Kalau masih deg-degan, tarik napas pelan-pelan ya, Ichaa.',tired:'Mulai pagi ini pelan-pelan aja. Kamu nggak harus buru-buru panik.',ready:'Semangatmu bagus. Simpan energi buat mengerjakan soal satu per satu.'}[s.feel]));
 
-await msg('mikasa','Checklist besok: kartu peserta, dokumen yang diperlukan, air minum jika diizinkan, dan sarapan. Sudah siap semua?');
+await msg('mikasa','Checklist sebelum berangkat: kartu peserta, dokumen yang diperlukan, alat tulis sesuai aturan, dan air minum jika diizinkan. Sudah siap semua?');
 await ask('Checklist-nya gimana?',[
  {l:'Udah semua ✅',r:[['mikasa','Bagus. Aku bangga.'],['levi','Tidak ada yang tertinggal. Rapi.',0,['mikasa','👍']]]},
- {l:'Belum, masih ada yang kurang 😅',r:[['mikasa','Ayo cek bareng sekarang. Pastikan dokumen ujianmu siap.'],['eren','Aku bantuin ingetin!!'],['levi','Siapkan semuanya malam ini. Jangan besok pagi.']]},
- {l:'Aku takut telat atau salah tempat 🥲',r:[['akame','Cek lokasi dan jadwal ujianmu sekarang.'],['levi','Pasang alarm dan berangkat lebih awal.'],['eren','BESOK KITA TAKLUKKAN UJIANNYA!!'],['mikasa','Tenang, Ichaa. Persiapkan semuanya dari sekarang.']]}]);
+ {l:'Belum, masih ada yang kurang 😅',r:[['mikasa','Ayo cek bareng sekarang. Pastikan dokumen ujianmu siap.'],['eren','Aku bantuin ingetin!!'],['levi','Cek semuanya sekarang. Lebih baik pastikan sebelum berangkat.']]},
+ {l:'Aku takut telat atau salah tempat 🥲',r:[['akame','Pastikan lokasi dan jadwal ujianmu benar.'],['levi','Perkirakan waktu perjalanan dan berangkat lebih awal.'],['eren','HARI INI KITA HADAPI UJIANNYA!!'],['mikasa','Tenang, Ichaa. Persiapkan semuanya dari sekarang.']]}]);
 await msg('akame','Kalau ada soal sulit, lewati dulu. Kerjakan yang bisa, lalu kembali lagi.',1);
 await msg('nouzen','Aku nggak banyak bicara. Tapi... aku percaya kamu bisa.',1);
 await msg('lena','Apa pun hasilnya, jangan lupa tersenyum ya. Itu satu-satunya yang kami minta.',1);
 await ask('Ada yang mau kamu bilang ke kami?',[
  {l:'Makasih semuanya 🥺',r:[['levi','Tch... sama-sama.'],['eren','KAMI SELALU SUPPORT KAMU!! 😭'],['mikasa','💗'],['akame','Jangan lupa sarapan.']]},
- {l:'Doain aku ya! 🙏',r:[['lena','Pasti. Setiap langkahmu besok.'],['akame','Kami semua mendoakanmu.'],['nouzen','Selalu.'],['eren','Aku doain tiga kali!']]},
+ {l:'Doain aku ya! 🙏',r:[['lena','Pasti. Kami mendoakanmu sepanjang hari ini.'],['akame','Kami semua mendoakanmu.'],['nouzen','Selalu.'],['eren','Aku doain tiga kali!']]},
  {l:'Aku juga doain kalian 😆',r:[['levi','...Aneh. Tapi baiklah.'],['eren','Hah?? Makasih Ichaa!'],['mikasa','Anak baik.']]}]);
 /* kejutan */
 
@@ -209,7 +209,7 @@ await ask('Ada yang mau kamu bilang ke kami?',[
  await msg('mikasa','Eh. Beneran. kasih hormat buat atminnn',0,['akame','👀']);
  await msg('eren','SIAPA?? OH!! ATMINNN!! 🔥🔥🔥',0,['levi','Eren. Volume.']);
  await msg('levi','Diam semua. Beri ruang. Dia lagi ngetik.');
- await msg('lena','Ichaa, kami mundur sebentar ya. Ada yang ingin bicara denganmu. 🌙');
+ await msg('lena','Ichaa, kami mundur sebentar ya. Ada yang ingin bicara denganmu. 💌');
  $('app').classList.add('dim');await w(800);sys('Aa uxie bergabung ke grup 💌');$('st').textContent='8 anggota · online';await w(1400);
  const r=document.createElement('div');r.className='row typing';r.style.setProperty('--c','#ffcf7a');r.innerHTML='<div class="av" style="display:grid;place-items:center;background:#223356">💌</div><div class="col"><span class="nm">Aa Uxie</span><div class="b dots"><i></i><i></i><i></i></div></div>';ch.appendChild(r);down(1);$('st').textContent='Aa uxie sedang mengetik…';await w(5200);r.remove();
  await letter();await w(900);
@@ -217,20 +217,20 @@ await ask('Ada yang mau kamu bilang ke kami?',[
  bar.innerHTML='<span class="ph">…</span>';$('app').classList.remove('dim');me('♡');
  for(let i=0;i<24;i++){const h=document.createElement('span');h.className='ht';h.textContent=['♡','🌸','✦','💗'][i%4];h.style.left=Math.random()*100+'vw';h.style.animationDuration=3+Math.random()*3+'s';h.style.animationDelay=Math.random()*1.5+'s';document.body.appendChild(h)}
  await w(1500);
- await msg('eren','😭😭😭');await msg('levi','...Tidur yang cukup.');await msg('akame','Besok sehabis ujian: daging. Janji.');await msg('nouzen','🌸');await msg('mikasa','Kami bangga sama kamu, Ichaa.');await msg('lena','Selamat tidur. Sampai bertemu setelah ujian. 🌙');
- await w(1000);sys('Semua anggota offline. Selamat tidur, Ichaa 🌙');$('st').textContent='terakhir dilihat baru saja';await w(3000);finale();
+ await msg('eren','😭😭😭');await msg('levi','Fokus satu soal dalam satu waktu. Jangan terburu-buru.');await msg('akame','Setelah ujian: daging. Janji.');await msg('nouzen','🌸');await msg('mikasa','Kami bangga sama kamu, Ichaa.');await msg('lena','Semangat menjalani hari ini, Ichaa. Kami dukung kamu! ☀️');
+ await w(1000);sys('Semua anggota offline. Semangat TKA hari ini, Ichaa ☀️');$('st').textContent='terakhir dilihat baru saja';await w(3000);finale();
 }
 /* ===== layar kunci ===== */
 (function(){const l=$('lsc');for(let i=0;i<50;i++){const s=document.createElement('i');s.className='stl';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*58}%;animation-delay:${Math.random()*3}s;opacity:${.3+Math.random()*.7}`;l.appendChild(s)}
  [[22,70,8],[34,95,10],[44,120,7]].forEach(([t,d,h],i)=>{const c=document.createElement('i');c.className='lc';c.style.cssText=`top:${t}%;width:${34+i*8}vw;height:${h}vh;animation-duration:${d}s;animation-delay:-${i*30}s`;l.appendChild(c)});
- const N=[['eren','Eren','ICHAA!! Besok TKA kan?! 🔥'],['levi','Levi','Tch. Jangan begadang.'],['mikasa','Mikasa','Sudah makan malam, Ichaa?'],['lena','Lena','Kami ada di sini untukmu 🌙']];
+ const N=[['eren','Eren','ICHAA!! Hari ini TKA kan?! 🔥'],['levi','Levi','Pastikan kartu peserta dan perlengkapanmu sudah siap.'],['mikasa','Mikasa','Jangan lupa sarapan dan minum air, Ichaa.'],['lena','Lena','Selamat pagi! Kami ada di sini untukmu ☀️']];
  N.forEach((n,i)=>setTimeout(()=>{if(opened)return;const b=document.createElement('button');b.className='noti';b.onclick=openChat;b.innerHTML=`<div class="ni" style="background-image:url(${IMG[n[0]]});background-position:${K[n[0]].p}"></div><div style="flex:1"><small>SQUAD SEMANGAT ICHAA</small><b>${n[1]}<i>sekarang</i></b><span>${n[2]}</span></div>`;$('nots').appendChild(b);navigator.vibrate&&navigator.vibrate(50)},1500+i*1600));
  $('lock').addEventListener('click',openChat);let y0=0;$('lock').addEventListener('pointerdown',e=>y0=e.clientY);$('lock').addEventListener('pointerup',e=>{if(y0-e.clientY>50)openChat()})})();
-/* ===== final: langit senja ke malam ===== */
-function sunset(){
+/* ===== final: langit pagi yang cerah ===== */
+function sunrise(){
  const cv=$('esk'),g=cv.getContext('2d'),d=Math.min(devicePixelRatio||1,1.5);let W,H;
  const rs=()=>{W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;g.setTransform(d,0,0,d,0,0)};rs();addEventListener('resize',rs);
- const hx=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16)),A=['#27407a','#b85a82','#ff8f66','#ffc27a','#ffe3a8'].map(hx),B=['#03061a','#0a1236','#12204a','#1c3464','#2d4f82'].map(hx),mx=(a,b,m)=>'rgb('+a.map((v,i)=>v+(b[i]-v)*m|0)+')';
+ const hx=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16)),A=['#8dc9ef','#b8e0f2','#ffe1a3','#ffbd78','#fff0c9'].map(hx),B=['#d8efff','#c5e8f7','#f9d9a9','#f3b47d','#ffe8b5'].map(hx),mx=(a,b,m)=>'rgb('+a.map((v,i)=>v+(b[i]-v)*m|0)+')';
  const shape=()=>{const c=document.createElement('canvas');c.width=600;c.height=220;const x=c.getContext('2d');for(let i=0;i<9;i++){const cx=80+Math.random()*440,cy=90+Math.random()*50,r=55+Math.random()*60,q=x.createRadialGradient(cx,cy,0,cx,cy,r);q.addColorStop(0,'rgba(255,255,255,.6)');q.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=q;x.fillRect(cx-r,cy-r,2*r,2*r)}return c};
  const tint=(s,a,b)=>{const c=document.createElement('canvas');c.width=600;c.height=220;const x=c.getContext('2d');x.drawImage(s,0,0);x.globalCompositeOperation='source-atop';const t=x.createLinearGradient(0,30,0,200);t.addColorStop(0,a);t.addColorStop(1,b);x.fillStyle=t;x.fillRect(0,0,600,220);return c};
  const SH=[0,1,2].map(shape),CS=SH.map(s=>tint(s,'rgba(255,205,160,.95)','rgba(200,110,150,.8)')),CN=SH.map(s=>tint(s,'rgba(150,180,230,.75)','rgba(40,60,120,.8)'));
@@ -240,8 +240,8 @@ function sunset(){
  (function f(now){const p=RM?1:Math.min(1,(now-t0)/26000),e=p*p*(3-2*p),u=Math.min(W,H),tt=now/1000;
   g.globalCompositeOperation='source-over';const gr=g.createLinearGradient(0,0,0,H);[0,.35,.6,.82,1].forEach((s,i)=>gr.addColorStop(s,mx(A[i],B[i],e)));g.fillStyle=gr;g.fillRect(0,0,W,H);
   g.globalCompositeOperation='lighter';
-  const sg=g.createRadialGradient(W/2,H*.92,0,W/2,H*.92,H*.65);sg.addColorStop(0,`rgba(255,170,110,${.8*(1-e)+.05})`);sg.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=sg;g.fillRect(0,0,W,H);
-  for(const s of ST){const v=Math.min(1,Math.max(0,(e-s.th*.8)*3));if(v<=0)continue;const a=v*(.5+.5*Math.sin(tt*s.sp+s.ph)),x=s.x*W,y=s.y*H*(1-.15*e);
+  const sg=g.createRadialGradient(W/2,H*.08,0,W/2,H*.08,H*.65);sg.addColorStop(0,`rgba(255,220,120,${.8*(1-e)+.05})`);sg.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=sg;g.fillRect(0,0,W,H);
+  for(const s of ST){const v=Math.min(1,Math.max(0,(e-s.th*.8)*3))*.25;if(v<=0)continue;const a=v*(.5+.5*Math.sin(tt*s.sp+s.ph)),x=s.x*W,y=s.y*H*(1-.15*e);
    if(s.r>1.2){const q=g.createRadialGradient(x,y,0,x,y,s.r*9);q.addColorStop(0,`rgba(255,246,225,${a*.7})`);q.addColorStop(1,'rgba(255,246,225,0)');g.fillStyle=q;g.beginPath();g.arc(x,y,s.r*9,0,6.3);g.fill()}
    g.fillStyle=`rgba(255,252,245,${a})`;g.beginPath();g.arc(x,y,s.r,0,6.3);g.fill()}
   g.globalCompositeOperation='source-over';
@@ -252,8 +252,8 @@ function sunset(){
  return{shoot(){sh={t:performance.now()}}};
 }
 async function finale(){
- $('end').classList.add('on');const sk=sunset(),ln=$('ln');
- await w(3000);for(const t of['Besok, kamu nggak harus sempurna.','Cukup datang, dan lakukan yang kamu bisa.']){ln.textContent=t;ln.classList.add('on');await w(4200);ln.classList.remove('on');await w(1800)}
+ $('end').classList.add('on');const sk=sunrise(),ln=$('ln');
+ await w(3000);for(const t of['Hari ini kamu nggak harus sempurna.','Cukup hadir, tarik napas, dan lakukan yang kamu bisa.']){ln.textContent=t;ln.classList.add('on');await w(4200);ln.classList.remove('on');await w(1800)}
  sk.shoot();await w(2600);sk.shoot();await w(1800);$('fb').classList.add('on');
 }
 </script>
